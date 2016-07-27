@@ -1,0 +1,31 @@
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>JakartaJS Blog</h1>
+                    <hr />
+                    <span class="subheading">A Blog by Jakarta Javascript User Group</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h4>Posts by {{user.username}}</h4>
+
+            {{#each posts}}
+            <div class="post-preview">
+                <h2 class="post-title"> {{title}} </h2>
+                <hr />
+                {{{content}}}
+                <p class="post-meta">Posted on {{createdAt}}</p>
+            </div>
+            <hr>
+            {{/each}}
+        </div>
+    </div>
+</div>
