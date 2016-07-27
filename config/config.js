@@ -9,7 +9,6 @@ var config = {
       name: 'jakartajs'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://localhost/jakartajs-development'
   },
 
   test: {
@@ -18,7 +17,6 @@ var config = {
       name: 'jakartajs'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://localhost/jakartajs-test'
   },
 
   production: {
@@ -27,7 +25,6 @@ var config = {
       name: 'jakartajs'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://localhost/jakartajs-production'
   }
 };
 

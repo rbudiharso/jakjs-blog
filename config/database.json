@@ -1,0 +1,38 @@
+{
+	"development": {
+		"username": "avd",
+		"password": "avd",
+		"database": "blog-development",
+		"host": "localhost",
+		"dialect": "postgres",
+		"pool": {
+			"maxConnections": 5,
+			"maxIdleTime": 3000
+		}
+	},
+	"test": {
+		"username": "avd",
+		"password": "avd",
+		"database": "blog-test",
+		"host": "localhost",
+		"dialect": "postgres",
+		"pool": {
+			"maxConnections": 5,
+			"maxIdleTime": 3000
+		}
+	},
+	"staging": {
+		"use_env_variable": "DATABASE_URL",
+		"pool": {
+			"maxConnections": 5,
+			"maxIdleTime": 3000
+		}
+	},
+	"production": {
+		"use_env_variable": "DATABASE_URL",
+		"pool": {
+			"maxConnections": 5,
+			"maxIdleTime": 3000
+		}
+	}
+}
